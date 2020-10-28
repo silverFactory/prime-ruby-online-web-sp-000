@@ -11,5 +11,6 @@ def prime?(int)
        num_check += 1
      end
    end
+   return true
   end
 end
