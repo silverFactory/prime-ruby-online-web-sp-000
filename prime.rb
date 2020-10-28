@@ -6,5 +6,6 @@ def prime?(int)
      return true
    else
      num_check += 1
+   end
   end
 end
