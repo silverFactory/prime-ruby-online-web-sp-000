@@ -1,7 +1,7 @@
 def prime?(int)
   pos_int = 1
   int.negative?() ? pos_int = int * -1 : pos_int = int
-  if pos_int==1||pos_int== 2||pos_int == 3||pos_int==5||pos_int==7
+  if pos_int== 2||pos_int == 3||pos_int==5||pos_int==7
     return true
   else
     limit = Math.sqrt(pos_int)
