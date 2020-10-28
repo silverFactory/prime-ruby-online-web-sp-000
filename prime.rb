@@ -1,6 +1,6 @@
 def prime?(int)
   pos_int = 1
-  negative?(int) ? pos_int = int * -1 : pos_int = int
+  int.negative?() ? pos_int = int * -1 : pos_int = int
   if pos_int==1||pos_int== 2||pos_int == 3||pos_int==5||pos_int==7
     return true
   else
