@@ -1,11 +1,13 @@
 def prime?(int)
-  if int==1||int== 2||int == 3||int==5||int==7
+  pos_int = 1
+  negative?(int) ? pos_int = int * -1 : pos_int = int
+  if pos_int==1||pos_int== 2||pos_int == 3||pos_int==5||pos_int==7
     return true
   else
-    limit = Math.sqrt(int)
+    limit = Math.sqrt(pos_int)
     num_check = 2
     while num_check <= limit do
-     if int.modulo(num_check) == 0
+     if pos_int.modulo(num_check) == 0
        return false
      else
        num_check += 1
